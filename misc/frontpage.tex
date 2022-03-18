@@ -1,0 +1,40 @@
+\nobibliography*                            % Allow use of \bibentry command
+\setlist{noitemsep}                         % Reduce space between list items 
+
+% Define commands for title and abstract
+\newcommand{\tit}{\textbf{Misbehaving In The Pits}}
+
+\newcommand{\abs}{
+\blindtext
+}
+
+\title{\tit}
+
+\author{John Doe}
+
+\date{\today}
+
+\maketitle
+
+\thispagestyle{empty}
+
+\begin{abstract}
+    \noindent
+    \abs
+\end{abstract}
+
+\cleardoublepage
+
+% Select spacing
+\onehalfspacing
+
+% Print table of contents (if desired)
+\begin{toc}
+\thispagestyle{empty}
+\begin{singlespacing}
+\tableofcontents
+\end{singlespacing}
+\clearpage
+\end{toc}
+
+\setcounter{page}{1}

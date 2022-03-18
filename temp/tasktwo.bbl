@@ -1,0 +1,8 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[Asness and Brown(2018)]{asness2018pulling}
+Asness, Clifford~S, and Aaron Brown, 2018, Pulling the goalie: Hockey and
+  investment implications, {\em Available at SSRN 3132563\/} .
+
+\end{thebibliography}

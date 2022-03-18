@@ -1,0 +1,48 @@
+\documentclass{beamer}
+\usetheme[progressbar=frametitle]{metropolis}
+\setbeamertemplate{frame numbering}[fraction]
+\useoutertheme{metropolis}
+\useinnertheme{metropolis}
+\usefonttheme{metropolis}
+\definecolor{uoftblue}{RGB}{3,43,92}
+\usecolortheme[named=uoftblue]{structure}
+\setbeamercolor{title separator}{fg=uoftblue}
+\setbeamercolor{palette primary}{bg=uoftblue}
+\setbeamercolor{background canvas}{bg=white}
+
+\title{Misbehaving In The Pits}
+\subtitle{How F1 Team Principals Make Pit Stop Decisions}
+\author{John Doe}
+\institute{University of Toronto Scarborough}
+\date{\today}
+
+\titlegraphic{%
+  \begin{picture}(0,0)
+    \put(325,15){\makebox(0,0)[rt]{\includegraphics[width=3cm]{figures/utsc_logo.jpg}}}
+  \end{picture}}
+\AtBeginSection[]{
+\begin{frame}{Talk Overview}
+\tableofcontents[currentsection]
+\end{frame}
+\frame{\sectionpage}
+}
+
+\makeatletter
+\setbeamertemplate{frametitle}{%
+  \nointerlineskip%
+  \begin{beamercolorbox}[%
+      wd=\paperwidth,%
+      sep=0pt,%
+      leftskip=\metropolis@frametitle@padding,%
+      rightskip=\metropolis@frametitle@padding,%
+    ]{frametitle}%
+  \metropolis@frametitlestrut@start%
+  \insertframetitle%
+  \nolinebreak%
+  \metropolis@frametitlestrut@end%
+  \hfill
+  \raisebox{-0.6ex}{\includegraphics[height=3ex,keepaspectratio]{figures/utsc_logo_inverse.jpg}}
+  \end{beamercolorbox}%
+}
+
+\makeatother

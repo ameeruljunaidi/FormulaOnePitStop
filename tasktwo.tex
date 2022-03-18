@@ -1,0 +1,139 @@
+% Do not change any of these lines below
+
+\input{misc/packages}      % Load all the necessary packages
+\input{misc/pythoncodes}   % Load all the python codes
+\begin{document}           % Begin document
+\input{misc/frontpage}     % Add title, abstract, toc, etc.
+
+% Only begin writing after this line
+
+\section{Points system and the pit stop from the strategic point of view}
+
+\subsection{Basic Rules and Point System}
+
+In Formula 1, there are 2 distinct championship competition that simultaneously takes
+place during the season; driver's championship and the constructor's championship. All
+the racers will be ranked based on the accumulation of individual points that results
+throughout the season. Meanwhile, the constructor's championship title will be given to
+the teams who achieves the highest accumulated points from their 2 drivers. Therefore,
+often team have to persecute difficult strategic order, that doesn't coincide with
+driver's interest, prioritizing the constructors rather than the drivers championship.
+
+Through out the season, each racers will be participating in 21 races (During 2021
+season, due to special COVID-19 procedure, the season ended with shorter 17 races). The
+points will be distributed according to the ascending order of the finishing position
+from each races, and those accumulation of those outcome will determine the result of
+both constructors and driver's championship. 
+
+\input{tables/pos_points}
+
+The list below are the key factors that determine team's strategic decision during the
+races.
+
+Amongst the lists of strategic factors, decisions surrounding pit stops are considered
+to be one of the crucial ones. During the races, each drivers are required to take at
+least 1 pit stop to replace their tyre. There are 5 types of the tyres that differs based
+on the softness of the rubber. The softer tyres will provide faster lap time, while
+compromising on the durability which forces team to pit more often. Pit stops are
+considered both risk and opportunity, since having fresher tyres will allow faster lap
+time, but each pit stops will add about 19 seconds on the lap time. Therefore, team
+managers will need to find ideal timing to utilize pit stop that minimize the longer lap
+time, while not giving up position against other competitors.
+
+\subsection{Potential for behavioural biases}
+
+\label{sec:leader-delta}
+Pit stop biases
+
+Pit stop is one of the critical elements in the motor sports for teams to reach higher
+position within the championship. By changing to newer tires, the car can take advantage
+of the weather and road conditions, as well as, switch to fresh tyre that allows better
+grip in the corner, thus resulting with higher chances of overtaking. Pit stops
+decisions can drastically overturn the position, but simultaneously could contain large
+risks of losing positions due to slow tyre swap or choosing the wrong tyre that does not
+match the road conditions under extreme weather.
+
+\begin{enumerate}
+\setlength\parskip{1em}
+\setlength\itemsep{1em}
+    
+    \item Overconfidence in double stacking
+    During the 2020 season, the running pole setting team, Mercedes AMG  made critical
+    errors in their tyre swap. The incident occurred during the lap 63, the rookie driver
+    in Williams Racing, J.Aitken crushed into a wall which caused yellow flag. Often,
+    yellow flags are considered to be perfect opportunities for team to return to the
+    pit to replace their tyre with fresher ones without losing the position. When the
+    yellow flag was waved, Mercedes's strategist quickly ordered both driver to
+    immediately get back to the pit for tyre swap. This strategy when two drivers are
+    ordered to simultaneously return to pit, is called "Double Stacking". Usually double
+    stacking can cause chaos in the pit because the team strategists need to precisely
+    schedule the driver's return to avoid overlap which can be detrimental to  smoothly
+    pit-stop. This strategy should be employed when the team strategist and the pit crew
+    have strong confidence in executing such high risk strategy. The pit stops is
+    orchestrated by the symphony between pit crew, driver and the strategists' perfect
+    coordination. However, in the Sakhir Grand Prix, Mercedes's decision on sudden
+    double stacking caused chaos and confusion amongst unprepared crew, resulting with
+    miss-placement of tyres and drop in position. 
+    
+    \item Multi 21 
+    Another strategic decision regarding the pit stop in known as "Multi 21". Team
+    strategist often orders the driver to swap position with their teammate, which
+    believed to have better outcome for the constructor's points.
+
+    How do you call biases that make people feel overly confident on taking chances when
+    they are approaching the end of the game? This is the same theme as the Hockey
+    team's behavioural biases. The teams often strategically use high risk strategy to
+    take the chances. \citep{asness2018pulling}
+    
+    However, statistical finding indicates that  probability of result in better outcome
+    have not been shown. 
+    
+    \item Different measurement of the performance 
+    \begin{itemize}
+        \item Position 
+        \item Lap time delta against the pole position 
+    \end{itemize}
+    
+\end{enumerate}
+
+\subsection{Research Approach}
+
+To examine the effectiveness of the pit stop strategy, there needs to be an 
+
+\section{Regression Analyses}
+
+\subsection{All Pit Stops}
+
+\begin{table}[ht]
+\input{tables/all_pits.tex}
+\caption{OLS Regression for all pit stops.}
+\label{tab:all_pits_reg}
+\end{table}
+
+\subsection{"Normal" Pit Stops}
+
+\begin{table}[ht]
+\input{tables/control_pit.tex}
+\caption{OLS Regression for control pit stops.}
+\label{tab:control_pits_reg}
+\end{table}
+
+\subsection{More-Than-Average Pit Stops}
+
+\begin{table}[ht]
+\input{tables/more_pit.tex}
+\caption{OLS Regression for more-than-average stops.}
+\label{tab:extra_pits_reg}
+\end{table}
+
+\begin{pycode}
+pythoncodes.view_rank_pos()
+\end{pycode}
+
+\begin{pycode}
+print("What's up")
+\end{pycode}
+
+% Do not change anything after this line
+\input{misc/bibliography}
+\end{document}

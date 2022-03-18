@@ -1,0 +1,62 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}                   % Package needed for fonts
+\usepackage[utf8]{inputenc}                % Package needed for fonts
+\usepackage{mathpazo}                      % Use the mathpazo font
+\usepackage{setspace}                      % Allows easy changes to line spacing 
+\usepackage{graphicx}                      % Allows including of graphics files
+\usepackage{amsmath}                       % Additional math capabilities
+\usepackage{datetime}                      % Allows formatting of date and time
+\usdate                                    % Use usual LaTeX date layout
+\usepackage{enumitem}                      % Change formatting of lists
+\usepackage{subfigure}                     % Create numbered and captioned subfigures
+\usepackage{rotating}                      % Create landscape tables and figures
+\usepackage{hyperref}                      % URLS and hyperlinks
+\usepackage{float}                         % Activate [H] option to place figure HERE
+\usepackage[longnamesfirst]{natbib}        % Bibliography formatting
+\usepackage[english]{babel}                % To get blindtext
+\usepackage{blindtext}                     % To generate random text
+\usepackage[margin=1in]{geometry}          % Set margins
+\usepackage{pythontex}                     % Load the python package
+\usepackage{mdframed}                      % Can add frames around stuff with this package
+\usepackage{listings}                      % To show python codes
+\usepackage{booktabs}                      % To format tables
+\usepackage{parskip}                       % Create line breaks on new paragraphs
+\usepackage[dvipsnames]{xcolor}            % Package for color
+\usepackage{verbatim}                      % To copy text verbatim to tex
+
+\renewcommand{\baselinestretch}{1}         % Set single spacing
+
+\usepackage{silence}                       % Disable all warnings issued by latex starting with
+\WarningFilter{latex}{You have requested package}
+
+\setlength\parindent{0pt}                  % Set no indent
+\setlength{\parskip}{1em}                  % Set space between paragraphs
+\graphicspath{ {./figures/} }              % Set image path
+\urlstyle{same}                            % Set url setting
+
+% Set hyperlink colors
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+    citecolor=blue,
+}
+
+% Create custom color for mdframed
+\definecolor{light-gray}{gray}{0.95}
+
+% Packages included specifically for this document.
+\usepackage{./sty/texintro}                % Document-specific definitions
+\usepackage{tocvsec2}                      % More flexible formatting of table of contents
+\usepackage{bibentry}                      % Print full citation in text
+\usepackage[retainorgcmds]{IEEEtrantools}  % Equation formatting. Option needed to allow enumitem to work.
+
+% These next lines allow including or excluding different versions of text using versionPO.sty
+\usepackage{./sty/versionPO}               % Include text conditionally
+\includeversion{links}                     % Turn hyperlinks on
+\includeversion{toc}		               % Include table of contents
+
+\let\oldmarginpar\marginpar                % Save original definition of \marginpar
+\setcounter{tocdepth}{2}                   % Number paragraphs and subparagraphs and include them in TOC
